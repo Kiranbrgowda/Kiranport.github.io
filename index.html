@@ -1,474 +1,1167 @@
 <!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Portfolio Webpage of Kiran</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<html lang="en">
+<head>
+    <title>Kiran B R - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="description" content="Portfolio website of Kiran Beekanahalli Rangaswamy - Computer Science Graduate and Full Stack Developer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #2c3e50;
+            --light-bg: #ecf0f1;
+            --transition: all 0.3s ease;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>Kiran Beekanahalli Rangaswamy Portfolio</h1>
-							<p>As a diligent and accomplished Computer Science graduate with extensive experience in application development, I am dedicated to delivering innovative solutions and driving team success. My professional journey at Accenture, spanning from November 2020 to August 2023, has honed my skills and expertise. I've played pivotal roles, evolved into an Advanced Application Engineering Senior Analyst, and consistently contributed to project excellence.
+        body {
+            line-height: 1.6;
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
 
-								<a href="https://www.linkedin.com/in/kiran-b-r-7526a913a">Kiran B R @ LinkidIn</a> 
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/KiranProfile.jpg" alt="" /></span>
-						</div> 
-					</section>
+        /* Enhanced Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(44, 62, 80, 0.95);
+            padding: 1rem 0;
+            z-index: 1000;
+            transition: var(--transition);
+            backdrop-filter: blur(10px);
+        }
 
-				<!-- Education Highlights: -->
-					<section id="first">
-						<header>
-							<h2>Education Highlights:
+        nav.scrolled {
+            padding: 0.5rem 0;
+            background: rgba(44, 62, 80, 0.98);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
 
-							</h2>
-						</header>
-						<div class="content">
-							<p><strong>Master of Science in Computer Science: </strong> I am pursuing my MSCS degree at Florida State University from August 2023, gaining valuable insights into the field.
-							</p>
-							<p><strong>Bachelor of Engineering in Electronics and Communication:</strong> My undergraduate journey at Malnad College of Engineering, Hassan, India (July 2016 - September 2020), was marked by recognition for project contributions, and active participation in extracurricular activities.
-							</p>
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
 
-							<p><strong> Undergrad Transcript </strong><br>
-							<a href="images/Transcript.pdf">MCE Transcript</a> </p>
+        .logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: var(--transition);
+        }
 
-							<p><strong> Bachelor Degree Certificate </strong><br>
-							<a href="images/Degree Certificate.pdf">Degree Certificate From Visvesvaraya Technological University(VTU)</a>
-							</p>
-							<p><strong> Master's Admit Letter </strong> <br>
-							<a href="images/Fsu_Admit_Letter.pdf">Florida State University Admit Letter</a> </p>
-							<!-- <span class="image main"><img src="images/KiranProfile.jpg"/></span> -->
-						</div>
-					</section>
+        .logo:hover {
+            color: var(--secondary-color);
+            transform: scale(1.05);
+        }
 
-				<!-- Professional Highlights: -->
-				<section id="first">
-					<header>
-						<h2>Professional Highlights:
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
 
-						</h2>
-					</header>
-					<div class="content">
-						<p><strong>Advanced Application Engineering Senior Analyst:</strong> Demonstrated my capabilities by spearheading project setup, database connections, and API development. My role encompassed the creation of user-friendly UI pages, cementing my proficiency in backend development, PostgreSQL functions, and server-side development.
-						</p>
-						<p><strong>Application Development Analyst: </strong> During my tenure, I excelled in creating and maintaining web APIs, optimizing data management through PostgreSQL, and enhancing user experiences through Angular integration. Agile/Scrum methodology became second nature.
-						</p>
-						<p><strong>Application Development Associate: </strong> As a full-stack developer, I played a vital role in the development of applications. My contributions extended to web API creation, making use of C#, .NET MVC, Java, CSS, and JavaScript.
-						</p>
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+            position: relative;
+            padding: 0.5rem 0;
+        }
 
-						<p><strong> Experience Letter</strong><br>
-						<a href="images/Kiran_Experience Letter.pdf">Accenture Experience Letter</a> 
-						</p>
-						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1920/1080');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(52, 152, 219, 0.3) 0%, rgba(44, 62, 80, 0.7) 100%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            position: relative;
+            z-index: 2;
+            background: rgba(0, 0, 0, 0.4);
+            padding: 3rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            border: 4px solid rgba(255, 255, 255, 0.8);
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: var(--transition);
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05) rotate(5deg);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: var(--transition);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .primary-btn {
+            background: var(--secondary-color);
+            color: white;
+            border: 2px solid var(--secondary-color);
+        }
+
+        .primary-btn:hover {
+            background: transparent;
+            color: var(--secondary-color);
+        }
+
+        .secondary-btn {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .secondary-btn:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Enhanced Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            border: 1px solid rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: var(--secondary-color);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Enhanced Skills Section */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        /* Enhanced Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+        }
+
+        button {
+            background: var(--secondary-color);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background: var(--primary-color);
+            transform: translateY(-2px);
+        }
+
+        /* Enhanced Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            transition: var(--transition);
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+        }
+
+        .social-links a:hover {
+            color: var(--secondary-color);
+            background: white;
+            transform: translateY(-3px);
+        }
+
+        /* Particle Animation */
+        .particle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            pointer-events: none;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) translateX(0);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.8;
+            }
+            100% {
+                transform: translateY(-100px) translateX(20px);
+                opacity: 0;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+		/* Projects Section Styles */
+        .projects-section {
+            background: var(--light-bg);
+            padding: 5rem 2rem;
+        }
+
+        .project-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            background: white;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: var(--transition);
+            font-weight: 500;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .filter-btn:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .filter-btn.active {
+            background: var(--secondary-color);
+            color: white;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .project-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(52, 152, 219, 0.9);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .project-link {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: white;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: var(--transition);
+            transform: translateY(20px);
+        }
+
+        .project-card:hover .project-link {
+            transform: translateY(0);
+        }
+
+        .project-link:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+        }
+
+        .project-content h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .project-content p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .project-tech span {
+            padding: 0.3rem 0.8rem;
+            background: var(--light-bg);
+            border-radius: 15px;
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-tech span {
+            background: rgba(52, 152, 219, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-filters {
+                gap: 0.5rem;
+            }
+
+            .filter-btn {
+                padding: 0.6rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">KB</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="about">
+        <div id="particles"></div>
+        <div class="hero-content">
+            <img src="images/KiranProfile.jpg" alt="Kiran B R" class="profile-img"/>
+            <h1>Kiran Beekanahalli Rangaswamy</h1>
+            <p>Computer Science Graduate | Full Stack Developer | Former Accenture Senior Analyst</p>
+            <div class="hero-buttons">
+                <!--<a href="#contact" class="btn primary-btn">Contact Me</a>
+                <a href="#projects" class="btn secondary-btn">View Projects</a> -->
+            </div>
+        </div>
+    </section>
+
+	 <!-- Education Section -->
+	 <section id="education">
+        <div class="section-container">
+            <h2 class="section-title">Education</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Master of Science in Computer Science</h3>
+                    <p>Florida State University</p>
+                    <p>2023 - Present</p>
+                </div>
+                <div class="card">
+                    <h3>Bachelor of Engineering</h3>
+                    <p>Electronics and Communication</p>
+                    <p>Malnad College of Engineering</p>
+                    <p>2016 - 2020</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="section-container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Advanced Application Engineering Senior Analyst</h3>
+                    <p>Accenture</p>
+                    <p>2022 - 2023</p>
+                    <ul>
+                        <li>Led project setup and database connections</li>
+                        <li>Developed robust APIs and UI pages</li>
+                        <li>Specialized in PostgreSQL and backend development</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Application Development Analyst</h3>
+                    <p>Accenture</p>
+                    <p>2021 - 2022</p>
+                    <ul>
+                        <li>Created and maintained web APIs</li>
+                        <li>Optimized PostgreSQL data management</li>
+                        <li>Integrated web pages with APIs using Angular, enhancing user experience.</li>
+                    </ul>	
 					</div>
-				</section>
-
-				<!-- Project Expertise: -->
-				<section id="first">
-					<header>
-						<h2>Project Expertise:
-
-						</h2>
-					</header>
-					<div class="content">
-						<p><strong>360 Value Meter Application (Accenture DCN):</strong> Orchestrated the development of web APIs tailored to meet application requirements, streamlined data management via PostgreSQL, and created seamless user interactions with Angular integration. My leadership within an Agile/Scrum framework resulted in project success.
-						</p>
-						<p><strong>One Asset (Accenture DCN): </strong> Thrived as a backend developer, optimizing database operations through PostgreSQL functions, crafting web APIs, and contributing to the application's functionality through strong server-side development.
-						</p>
-						<p><strong>CXO (Accenture DCN) </strong> Excelled as a backend developer, contributing to project success. Utilized PostgreSQL functions to optimize database operations. Created web APIs to facilitate data flow and interactions. Leveraged strong server-side development skills to enhance application functionality.
-						</p>
-
-						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+				<div class="card">
+					<h3>Application Development Associate</h3>
+					<p>Accenture</p>
+					<p>2021 - 2022</p>
+					<ul>
+						<li>Demonstrated expertise in C#, .NET MVC, Java, CSS, and JavaScript.</li>
+						<li>Worked collaboratively within the context of an Agile/Scrum framework to achieve project objectives.</li>
+						<li>Implemented Angular integrations</li>
+					</ul>	
 					</div>
-				</section>
-
-				<!--  Certificates and Skills: -->
-				<section id="first">
-					<header>
-						<h2>Certificates and Skills:
-
-						</h2>
-					</header>
-					<div class="content">
-						<p> My commitment to continuous learning is reflected in my certifications, including C# Basic HackerRank, Infosys Springboard Agile Scrum, SQL HackerRank, and Infosys Springboard Angular.
-						</p>
-						<p>Proficient in a wide range of programming languages and technologies, such as C#, .NET MVC, Java, CSS, JavaScript, PostgreSQL, GIT, Machine Learning, SQL, AWS, Operating Systems, TypeScript, C++, HTML, DBMS, AngularJS, and IoT.
-						</p>
-
-						<p><strong>C# Certification </strong><br>
-						<a href="https://www.hackerrank.com/certificates/1bbaf9602a38">HackerRank c# Basic Certification</a>
-						</p>
-						<p><strong>SQL Certification </strong><br>
-						<a href="https://www.hackerrank.com/certificates/iframe/1bbaf9602a38">HackerRank SQL Basic Certification</a>  
-						</p>
-						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
+				<div class="card">
+					<h3>Computer Science Tutor</h3>
+					<p>Leon County Schools</p>
+					<p>May'24 - July'24</p>
+					<ul>
+						<li>Conduct engaging and interactive in-person coding classes.</li>
+						<li>Teach various coding languages including C, Python, and Java.</li>
+						<li>Foster a positive and supportive learning environment, inspiring students’ passion for technology.</li>
+					</ul>	
 					</div>
-				</section>
+				
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!--  Languages: -->
-				<section id="first">
-					<header>
-						<h2>Languages:
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-item">C#</div>
+                <div class="skill-item">.NET MVC</div>
+                <div class="skill-item">Java</div>
+                <div class="skill-item">PostgreSQL</div>
+                <div class="skill-item">Angular</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">TypeScript</div>
+                <div class="skill-item">AWS</div>
+                <div class="skill-item">Git</div>
+                <div class="skill-item">Machine Learning</div>
+            </div>
+        </div>
+    </section>
 
-						</h2>
-					</header>
-					<div class="content">
-						<p> I am fluent in English, Kannada, and Hindi, enabling effective communication and collaboration.
-						</p>
-						<!-- <span class="image main"><img src="images/pic02.jpg" alt="" /></span> -->
-					</div>
-				</section>
+	<!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <h2 class="section-title">My Projects</h2>
+            
+            <!-- Project Filters -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="app">Applications</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="images/pic02.jpg" alt="360 Value Meter Application" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project1" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>360 Value Meter Application</h3>
+                        <p>A full-stack Web Application built with .NET Core and Angular, featuring real-time KPI management with other dashboard.</p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>Angular</span>
+                            <span>PostgreSQL</span>
+                            <span>Azure</span>
+							<span>.Net</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="images/pic02.jpg" alt="One Asset" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project2" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>One Asset</h3>
+                        <p>A web application developed using Angular, .NET, and SQL procedures and functions.</p>
+                        <div class="project-tech">
+                            <span>Angular</span>
+                            <span>PowerBI</span>
+                            <span>GIT</span>
+                            <span>.Net</span>
+							<span>SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="images/pic02.jpg" alt="Task Management App" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A responsive task management application with real-time updates and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
+
+				 <!-- Project 4 -->
+				 <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="images/pic02.jpg" alt="Task Management App" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A responsive task management application with real-time updates and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
 
 
+				 <!-- Project 5 -->
+				 <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="images/pic02.jpg" alt="Task Management App" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A responsive task management application with real-time updates and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
 
 
+				 <!-- Project 6 -->
+				 <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="images/pic02.jpg" alt="Task Management App" />
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>A responsive task management application with real-time updates and team collaboration features.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Socket.IO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Elements -->
-				<!--
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Name" required/>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email" required/>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </div>
+        </div>
+    </section>
 
-							<section>
-								<header>
-									<h3>Text</h3>
-								</header>
-								<div class="content">
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<hr />
-									<h5>Blockquote</h5>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h5>Preformatted</h5>
-									<pre><code>i = 0;
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>kiranbr1808@gmail.com</p>
+            <p>(850) 900-6101</p>
+            <p>318F Ausley Road, Tallahassee, FL 32304</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kiran-b-r-7526a913a" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Kiranbrgowda/Kiranport.github.io.git" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/kiran__br" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
 
-while (!deck.isInOrder()) {
-  print 'Iteration ' + i;
-  deck.shuffle();
-  i++;
-}
 
-print 'Sorted in ' + i + ' iterations.';</code></pre>
-								</div>
-							</section>
+    <script>
+        // Smooth scrolling with improved easing
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                const navHeight = document.querySelector('nav').offsetHeight;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - navHeight;
 
-							<section>
-								<header>
-									<h3>Lists</h3>
-								</header>
-								<div class="content">
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
 
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+                // Update active nav link
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
 
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
+        // Enhanced nav scroll effect with performance optimization
+        let lastScroll = 0;
+        const nav = document.querySelector('nav');
+        
+        window.addEventListener('scroll', () => {
+            requestAnimationFrame(() => {
+                const currentScroll = window.pageYOffset;
+                
+                if (currentScroll > 50) {
+                    nav.classList.add('scrolled');
+                    if (currentScroll > lastScroll) {
+                        nav.style.transform = 'translateY(-100%)';
+                    } else {
+                        nav.style.transform = 'translateY(0)';
+                    }
+                } else {
+                    nav.classList.remove('scrolled');
+                    nav.style.transform = 'translateY(0)';
+                }
+                
+                lastScroll = currentScroll;
+            });
+        });
 
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
+        // Improved intersection observer for animations
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
 
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</div>
-							</section>
+        const fadeInElements = document.querySelectorAll('.card, .section-title, .skills, .contact-form');
 
-							<section>
-								<header>
-									<h3>Table</h3>
-								</header>
-								<div class="content">
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '0';
+                    entry.target.style.transform = 'translateY(20px)';
+                    
+                    // Stagger the animations
+                    setTimeout(() => {
+                        entry.target.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }, 100);
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
 
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</div>
-							</section>
+        fadeInElements.forEach(element => observer.observe(element));
 
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
+        // Enhanced particle animation system
+        function createParticles() {
+            const particles = document.getElementById('particles');
+            const numberOfParticles = 50;
 
-							<section>
-								<header>
-									<h3>Form</h3>
-								</header>
-								<div class="content">
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</div>
-							</section>
+            // Clear existing particles
+            particles.innerHTML = '';
 
-						</div>
-					</section>
-				-->
+            for (let i = 0; i < numberOfParticles; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                
+                // Random size between 2-4px
+                const size = Math.random() * 2 + 2;
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                
+                // Random position
+                particle.style.left = `${Math.random() * 100}%`;
+                particle.style.top = `${Math.random() * 100}%`;
+                
+                // Random animation duration and delay
+                const duration = 3 + Math.random() * 4;
+                const delay = Math.random() * 5;
+                
+                particle.style.animation = `float ${duration}s ${delay}s infinite`;
+                
+                particles.appendChild(particle);
+            }
+        }
 
-				<!-- Section -->
-					<section>
-						<header>
-							<h2>Get in touch</h2>
-						</header>
-						<div class="content">
-							<form>
-								<div class="fields">
-									<div class="field half">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="button primary" /></li>
-								</ul>
-							</form>
-						</div>
-						<footer>
-							<ul class="items">
-								<li>
-									<h3>Email</h3>
-									<a href="#">kiranbr1808@gmail.com</a>
-								</li>
-								<li>
-									<h3>Phone</h3>
-									<a href="#">(850) 900-6101</a>
-								</li>
-								<li>
-									<h3>Address</h3>
-									<span>318F Ausley Road, Tallahassee, FL 32304</span>
-								</li>
-								<li>
-									<h3>Elsewhere</h3>
-									<ul class="icons">
-										<li><a href="https://instagram.com/kiran__br?igshid=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="https://www.linkedin.com/in/kiran-b-r-7526a913a" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="https://github.com/Kiranbrgowda/Kiranport.github.io.git" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-									</ul>
-								</li>
-							</ul>
-						</footer>
-					</section>
+        // Initialize particles and recreate on window resize
+        createParticles();
+        window.addEventListener('resize', createParticles);
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; Untitled. All rights reserved.</div>
+        // Form validation and interaction
+        const contactForm = document.querySelector('.contact-form');
+        const formInputs = contactForm.querySelectorAll('input, textarea');
 
-			</div>
+        formInputs.forEach(input => {
+            // Add focus effects
+            input.addEventListener('focus', () => {
+                input.parentElement.classList.add('focused');
+            });
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+            input.addEventListener('blur', () => {
+                if (!input.value) {
+                    input.parentElement.classList.remove('focused');
+                }
+            });
 
-	</body>
+            // Real-time validation
+            input.addEventListener('input', () => {
+                if (input.value) {
+                    input.classList.add('valid');
+                } else {
+                    input.classList.remove('valid');
+                }
+            });
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Basic form validation
+            let isValid = true;
+            formInputs.forEach(input => {
+                if (!input.value.trim()) {
+                    isValid = false;
+                    input.classList.add('invalid');
+                } else {
+                    input.classList.remove('invalid');
+                }
+            });
+
+            if (isValid) {
+                // Simulate form submission
+                const submitButton = contactForm.querySelector('button');
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+                submitButton.disabled = true;
+
+                // Simulate API call
+                setTimeout(() => {
+                    submitButton.innerHTML = '<i class="fas fa-check"></i> Sent!';
+                    submitButton.style.backgroundColor = '#27ae60';
+                    
+                    // Reset form after delay
+                    setTimeout(() => {
+                        contactForm.reset();
+                        submitButton.innerHTML = 'Send Message';
+                        submitButton.style.backgroundColor = '';
+                        submitButton.disabled = false;
+                    }, 2000);
+                }, 1500);
+            }
+        });
+
+        // Skill items hover effect
+        const skillItems = document.querySelectorAll('.skill-item');
+        skillItems.forEach(item => {
+            item.addEventListener('mouseenter', () => {
+                item.style.transform = 'translateY(-5px) scale(1.05)';
+            });
+
+            item.addEventListener('mouseleave', () => {
+                item.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Add active section highlighting in navigation
+        function highlightNavigation() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const id = section.getAttribute('id');
+                
+                if (rect.top <= 150 && rect.bottom >= 150) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+
+		 // Project filtering functionality
+		 const filterButtons = document.querySelectorAll('.filter-btn');
+        const projectCards = document.querySelectorAll('.project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                // Filter projects
+                const filter = button.dataset.filter;
+                
+                projectCards.forEach(card => {
+                    // Remove existing animation classes
+                    card.style.animation = 'none';
+                    card.offsetHeight; // Trigger reflow
+
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                        // Add fade-in animation
+                        card.style.animation = 'fadeIn 0.5s ease forwards';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Add hover effect for project cards
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const links = card.querySelectorAll('.project-link');
+                links.forEach((link, index) => {
+                    link.style.transitionDelay = `${index * 0.1}s`;
+                });
+            });
+
+            card.addEventListener('mouseleave', () => {
+                const links = card.querySelectorAll('.project-link');
+                links.forEach(link => {
+                    link.style.transitionDelay = '0s';
+                });
+            });
+        });
+
+        window.addEventListener('scroll', highlightNavigation);
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            highlightNavigation();
+        });
+    </script>
+</body>
 </html>
